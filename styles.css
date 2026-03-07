@@ -14,7 +14,7 @@ body {
   background-color: #f3f3f1;
 }
 
-/* NAVBAR */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -47,7 +47,7 @@ body {
   color: #555;
 }
 
-/* HERO */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -60,7 +60,7 @@ body {
   background: #efefec;
 }
 
-/* large top-left shape */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -73,7 +73,7 @@ body {
   transform: rotate(12deg);
 }
 
-/* bottom-right shape */
+
 .hero::after {
   content: "";
   position: absolute;
@@ -86,7 +86,7 @@ body {
   transform: rotate(-10deg);
 }
 
-/* extra shapes */
+
 .hero .shape1,
 .hero .shape2,
 .hero .shape3,
@@ -139,7 +139,7 @@ body {
   z-index: 0;
 }
 
-/* large mid-right */
+
 .hero .shape5 {
   width: 420px;
   height: 420px;
@@ -150,7 +150,7 @@ body {
   transform: rotate(-14deg);
 }
 
-/* large center-left */
+
 .hero .shape6 {
   width: 380px;
   height: 380px;
@@ -160,7 +160,7 @@ body {
   transform: rotate(45deg);
 }
 
-/* subtle top middle */
+
 .hero .shape7 {
   width: 300px;
   height: 300px;
@@ -194,7 +194,7 @@ body {
   color: #333;
 }
 
-/* ICONS */
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -212,7 +212,7 @@ body {
   color: #555;
 }
 
-/* SCROLL DOWN */
+
 .scroll-down {
   position: absolute;
   bottom: 30px;
@@ -236,7 +236,7 @@ body {
   }
 }
 
-/* SCROLL UP */
+
 .scroll-up {
   margin-top: 40px;
   text-align: center;
@@ -258,7 +258,7 @@ body {
   }
 }
 
-/* SECTIONS */
+
 .section {
   min-height: 100vh;
   padding: 120px 40px 60px;
@@ -279,7 +279,7 @@ body {
   margin: 0 auto 50px;
 }
 
-/* ABOUT */
+
 .about-section p {
   max-width: 900px;
   margin: 0 auto;
@@ -288,7 +288,7 @@ body {
   color: #333;
 }
 
-/* SKILLS */
+
 .skills-section {
   padding-bottom: 80px;
 }
@@ -338,7 +338,7 @@ body {
   display: block;
 }
 
-/* FLOATING EFFECT */
+
 .floating {
   animation: float 3.2s ease-in-out infinite;
 }
@@ -368,7 +368,7 @@ body {
   }
 }
 
-/* CONTACT */
+
 .contact-icon {
   font-size: 4rem;
   margin-bottom: 40px;
@@ -551,4 +551,24 @@ font-size: 1.4rem;
 
 .project-icon:hover {
   transform: scale(1.08);
+}
+
+.about-section p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
