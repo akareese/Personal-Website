@@ -297,9 +297,9 @@ body {
   max-width: 1200px;
   margin: 0 auto 70px;
   padding: 40px 30px;
-  background: #2f2f2f;
+  background: #b9b7b7;
   border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
 .skills-group h3 {
@@ -450,11 +450,11 @@ body {
 }
 
 .project-card {
-  background-color: #f5f5f5;
-  padding: 30px 24px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  text-align: left;
+  background: #f5f5f2;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card h3 {
@@ -541,4 +541,14 @@ object-fit: contain;
 .project-card h3 {
 margin: 0;
 font-size: 1.4rem;
+}
+
+.project-icon {
+  width: 70px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.08);
 }
