@@ -442,10 +442,10 @@ body {
 }
 
 .projects-grid {
-  max-width: 1300px;       /* bumped up from 1100px to give 3 cards room */
+  max-width: 1300px;       
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* changed from auto-fit to fixed 3 columns */
+  grid-template-columns: repeat(3, 1fr);   
   gap: 25px;
 }
 
