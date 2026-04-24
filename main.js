@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const form = document.querySelector("#contact-form");
 
 emailjs.init({
@@ -21,7 +21,7 @@ if (form) {
       console.log(error);
     });
   });
-=======
+
 const form = document.querySelector("#contact-form");
 
 emailjs.init({
@@ -44,5 +44,5 @@ if (form) {
       console.log(error);
     });
   });
->>>>>>> 5cc1d32f7a20ad3843009f3835cab2eec1329b7e
+
 }
