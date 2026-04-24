@@ -46,3 +46,11 @@ if (form) {
   });
 
 }
+
+const catLogo = document.getElementById("cat-logo");
+const meowSound = new Audio("assets/meow.mp3");
+
+catLogo.addEventListener("click", () => {
+  meowSound.currentTime = 0; 
+  meowSound.play();
+});
