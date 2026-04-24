@@ -22,7 +22,7 @@ if (form) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
+  // Cat meow
   const catLogo = document.getElementById("cat-logo");
   if (catLogo) {
     const meowSound = new Audio("assets/meow.mp3");
@@ -32,25 +32,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-const clickSound = new Audio("assets/click.mp3");
-const clickableLinks = document.querySelectorAll(
-  ".nav-links a, .project-header a, .social-icons a"
-);
+  // Click sound on nav + project links
+  const clickSound = new Audio("assets/click.mp3");
+  const clickableLinks = document.querySelectorAll(
+    ".nav-links a, .project-header a, .social-icons a"
+  );
 
-clickableLinks.forEach(link => {
-  link.addEventListener("click", (e) => {
-    const href = link.getAttribute("href");
-    const opensInNewTab = link.target === "_blank";
-    const isAnchor = href && href.startsWith("#");
+  clickableLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      const opensInNewTab = link.target === "_blank";
+      const isAnchor = href && href.startsWith("#");
 
-    clickSound.currentTime = 0;
-    clickSound.play().catch(err => console.log("Audio error:", err));
+      clickSound.currentTime = 0;
+      clickSound.play().catch(err => console.log("Audio error:", err));
 
-    if (!opensInNewTab && !isAnchor && href) {
-      e.preventDefault();
-      setTimeout(() => {
-        window.location.href = href;
-      }, 180);
-    }
+      if (!opensInNewTab && !isAnchor && href) {
+        e.preventDefault();
+        setTimeout(() => {
+          window.location.href = href;
+        }, 180);
+      }
+    });
   });
 });
