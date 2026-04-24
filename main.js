@@ -22,13 +22,25 @@ if (form) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const catLogo = document.getElementById("cat-logo");
-  if (!catLogo) return;
+  if (catLogo) {
+    const meowSound = new Audio("assets/meow.mp3");
+    catLogo.addEventListener("click", () => {
+      meowSound.currentTime = 0;
+      meowSound.play().catch(err => console.log("Audio error:", err));
+    });
+  }
 
-  const meowSound = new Audio("assets/meow.mp3");
+  const clickSound = new Audio("assets/click.mp3");
+  const clickableLinks = document.querySelectorAll(
+    ".nav-links a, .project-header a, .social-icons a"
+  );
 
-  catLogo.addEventListener("click", () => {
-    meowSound.currentTime = 0;
-    meowSound.play().catch(err => console.log("Audio error:", err));
+  clickableLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play().catch(err => console.log("Audio error:", err));
+    });
   });
 });
